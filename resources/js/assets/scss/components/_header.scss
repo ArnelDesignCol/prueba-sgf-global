@@ -1,0 +1,149 @@
+.header {
+    background-color: $primaryColor;
+    font-family: $fontAirbnb;
+
+    .desktop__header {
+        display: block;
+    }
+
+    .mobile__header {
+        display: none;
+    }
+
+    .topbar {
+        background-color: $blackColor;
+        font-size: 14px;
+        position: fixed;
+    width: 100%;
+    z-index: 1;
+    }
+
+    .products__browser {
+        .vs__dropdown-toggle {
+            height: 48px;
+            background-color: $whiteColor;
+        }
+
+        .vs--open .vs__open-indicator {
+            transform: none;
+        }
+    }
+
+    .city__select {
+        .vs__dropdown-toggle {
+            border: none;
+        }
+
+        .vs__selected {
+            color: $whiteColor;
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    .badges {
+        background-color: $redColor;
+        padding: 5px 8px;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .menus {
+        background-color: $whiteColor !important;
+        position: fixed;
+        z-index: 1;
+        margin-top: 160px;
+
+        
+
+        button {
+            background-color: transparent !important;
+            border: none;
+        }
+
+        span {
+            color: $primaryColor;
+            font-size: 10px;
+        }
+
+        i {
+            color: $primaryColor;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: 1200px)  {
+    .header {
+        .topbar {
+            display: none;
+        }
+
+        .mobile__header {
+            display: block;
+            height: 100% !important;
+
+            .v-toolbar__content {
+                height: 100% !important;
+            }
+
+            .v-app-bar__nav-icon {
+                color: $whiteColor;
+            }
+
+            .city__select {
+                .vs__actions {
+                    display: none;
+                }
+            }
+
+        }
+
+        .desktop__header {
+            display: none;
+        }
+
+        .menus {
+            display: none;
+        }
+    }
+}
+
+.v-main {
+    padding-top: 10% !important;
+}
+
+
+// Menus
+.v-menu__content {
+    width: 25% !important;
+    overflow: hidden !important;
+    
+}
+
+.dog-menu {
+    background-color: $whiteColor;
+    padding-top: 10px;
+    padding-left: 10px;
+    min-width: 100% !important;
+
+    img {
+        width: 100%;
+
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .header {
+        .menus {
+    
+            span {
+                color: $primaryColor;
+                font-size: 14px;
+            }
+        }
+    }
+}

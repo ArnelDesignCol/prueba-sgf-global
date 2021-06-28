@@ -1,0 +1,20 @@
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+
+Vue.use(VueRouter);
+
+const routes = [
+    {
+        path: '/',
+        component: () => import('../views/home/home.vue'),
+        name: 'Home'
+    }
+];
+
+const router = new VueRouter({
+    mode: 'history',
+    history: true,
+    routes
+});
+
+export default router;

@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+
+    .p-1 {
+        padding: 4px;
+    }
+
+    .text-primary {
+        color: $primaryColor !important;
+    }
+
+    .text-white {
+        color: $whiteColor !important;
+    }
+}
+
+* {
+    font-family: $fontAirbnb;
+}
+
+@media (min-width: 1264px) {
+    .container {
+        max-width: 90%;
+    }
+}

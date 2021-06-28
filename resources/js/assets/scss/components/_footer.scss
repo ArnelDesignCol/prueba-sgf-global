@@ -1,0 +1,87 @@
+.footer {
+    font-family: 'Airbnb Cereal App', sans-serif;
+
+    .top__footer {
+        .title__top--footer {
+            text-transform: uppercase;
+        }
+
+        .about__laika {
+            list-style: none;
+            padding-left: 0;
+            
+            li {
+                padding-top: 10px;
+
+                a {
+                    text-decoration: none;
+
+                    .text__top--footer {
+                        font-size: 15px;
+                    }
+
+                    .text__small--top--footer {
+                        font-size: 11px;
+                    }
+                }
+
+                .v-input__icon--append {
+                    .v-icon {
+                        background-color: $primaryColor;
+                        color: $whiteColor !important;
+                        border-radius: 5px;
+                    }
+                }
+
+                .v-label {
+                    font-size: 10px;
+                    color: $primaryColor;
+                }
+            }
+        }
+    }
+    
+    .down__footer {
+        background-color: $beigeColor;
+        padding-left: 0;
+        padding-right: 0;
+
+        img {
+            width: 100px;
+        }
+    }
+}
+
+.v-text-field--solo {
+    border: 1px solid $primaryColor;
+    border-radius: 5px;
+    height: 50px;
+    padding: 10px;
+}
+
+.v-text-field.v-text-field--solo:not(.v-text-field--solo-flat)>.v-input__control>.v-input__slot {
+    box-shadow: none;
+}
+
+.v-input--selection-controls {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .footer {
+        .down__footer {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1279px) {
+    .footer {
+        .top__footer {
+            display: none;
+        }
+    }
+}
